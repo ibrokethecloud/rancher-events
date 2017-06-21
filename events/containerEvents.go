@@ -11,7 +11,7 @@ import "github.com/fsouza/go-dockerclient"
 func GetContainerEvents(){
   // Function to query container events //
   /* Module to try and use the rancher-client for api data */
-  clientConnection := client.ClientOpts {Url:  os.Getenv("CATTLE_URL"), AccessKey: os.Getenv("CATTLE_ACCESS_KEY"), SecretKey: os.Getenv("CATTLE_SECRET_KEY"), Timeout: 30*time.Second}
+  clientConnection := client.ClientOpts {Url:  os.Getenv("CATTLE_URL"), AccessKey: os.Getenv("CATTLE_ACCESS_KEY"), SecretKey: os.Getenv("CATTLE_SECRET_KEY")}
 
 
   /* Setting my custom ListOpts Filter */
